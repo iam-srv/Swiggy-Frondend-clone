@@ -1,0 +1,239 @@
+*{
+    padding:0;
+    border:none;
+    margin: 0%;
+    font-weight: 600;
+}
+
+.nav_container{
+ 
+    display: flex;
+    justify-content:space-around;
+    box-shadow: 10px 10px 20px #F3F4F4 ;
+    padding: 30px 20px;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    z-index: 1;
+}
+.left_nav{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  
+}
+.left_nav > img {
+    width : 40px;
+
+}
+
+.address_container{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+     gap: 10px;
+}
+#other{
+    font-weight:bolder;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#other:hover{
+    color: #FC8019;
+}
+.right_nav{
+    
+    width:40%;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    gap: 20px;
+}
+.right_nav > a{
+    color:#7B5C68 ;
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+}
+.main-container{
+    margin: 50px 200px 200px 200px;
+}
+.second_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom:1px solid #9DA1A8;
+}
+.link-lists{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+    
+}
+.link-lists > a{
+    text-decoration: none;
+    
+}
+.link-lists > a:hover{
+    border-bottom: 2px solid black;
+}
+.card-container{
+    /* border: 2px solid blue; */
+     display: flex;
+    justify-content: space-evenly;
+      margin-top: 50px;
+      flex-wrap: wrap ;
+}
+.button{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid #c8d4e8;
+   font-family: 'Nunito', sans-serif;
+    color: #5D8ED5;
+    padding-top: 20px;
+}
+.card{
+    
+    width: 300px;
+    padding: 20px;
+   
+}
+.card  img {
+    width: 100%;
+
+}
+.card > h3 {
+    margin : 10px;
+    margin-left: 0;
+    font-weight: bolder;
+}
+.rating-conatiner{
+    width: 100%;
+    display: flex;
+    justify-content : space-between;
+    padding: 10px 0;
+    color:#7B5C68 ;
+    border-bottom: 0.5px solid #c8d4e8;
+}
+.rating{
+   display: flex;
+   align-items: center; 
+    gap: 4px;
+    width: 50px;
+   background-color: #f08131;
+   padding: 0px 5px;
+   color: white;
+   border-radius: 1px;
+}
+.rating > .material-icons {
+    font-size: 20px !important;
+
+}
+.sell-container{
+    display: flex;
+    font-weight: 50px;
+    align-items: flex-starts;
+    gap: 10px;
+    padding: 10px;
+    
+}
+.sell-container > .material-icons{
+    font-size: 23px;
+    color:#784c42;
+    padding: 2px;
+}
+.card:hover > .button  {
+   visibility: visible;
+    
+} 
+.card:hover{
+    outline: 0.2px solid #c8d4e8;
+    box-shadow: -2px -2px 1px #c8d4e8;
+    background-color: white;
+}
+.badge-container{
+    border:1px solid red;
+    position : relative;
+}
+.badge{
+    position: absolute;
+    color: white;
+    padding: 4px 10px;
+    top : -2px;
+    left :-10px;
+    font-size :14px;
+    background-color: #3A3C41;
+}
+.badge::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background-color: #3A3C41; 
+    position:absolute;
+    top:30px;
+    left: 11px;
+    bottom: 0;
+    transform: skewX(45deg);
+    z-index:-2;
+}
+
+
+/*footer session*/
+
+footer{
+background-color: black;
+ padding: 100px;
+ display: flex;
+ justify-content: space-around;
+ gap: 20px;
+ position: relative;
+}
+
+.footer-items{
+    
+   display: flex;
+   flex-flow: column wrap;
+   gap: 20px;
+}
+.footer-items > h4 {
+    color : rgb(146, 140, 140)
+}
+.footer-items > a {
+    color : rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.img-container > img{
+  border : 1px solid rgb(183, 179, 179);
+  width : 250px;
+  height: 70px;
+  border-radius: 10px;
+  padding: 10px;
+   transition: .5s;
+}
+.img-container > img:hover {
+    
+    transform:scale(1.1);
+}
+.img-container{
+    justify-content: center;
+    gap :50px;
+    
+}
+
+.footer-items > a:hover {
+    
+    transform: scaleX(1.1);
+    color:white;
+    font-stretch:ultra-expanded;
+   
+}
